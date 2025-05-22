@@ -1,0 +1,338 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #f5f7fa;
+  color: #222831;
+  
+}
+
+header {
+  background-color: white;
+  padding: 20px 40px;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.header{
+  margin: auto;
+  max-width: 1150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo{
+  display: flex;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.logo-img{
+  max-width: 150px;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+}
+
+nav{
+  margin-right: 15px;
+}
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #222831;
+      font-weight: 500;
+    }
+
+.btn {
+  padding: 10px 20px;
+  background-color: #1e88e5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transform: all 0.1s linear;
+}
+
+.btn:hover{
+  transform: scale(1.03);
+}
+
+.btn-menu{
+  background-color: white;
+  
+  cursor: pointer;
+}
+
+.home{
+  background-image: url(img/capa.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 80px 40px;
+  
+}
+
+.container-home{
+  max-width: 1150px;
+  margin: auto;
+  
+  
+}
+
+.info-home{
+  max-width: 600px;
+  
+}
+
+.info-home h1{
+  font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: white;
+}
+
+.info-home p{
+  font-size: 1.3rem;
+      margin-bottom: 30px;
+      color: #d2d2d2;
+}
+
+.home-buttons .btn{
+  margin-right: 20px;
+}
+
+.solucoes{
+  padding: 60px 40px;
+  background-color: #f5f7fa;
+  text-align: center;
+}
+
+.solucoes h2{
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.card {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  width: 350px;
+  overflow: hidden;
+}
+
+.img-card{
+  max-height: 230px;
+}
+
+.img-card img{
+  max-height: 230px;
+}
+
+.title-card{
+  padding: 10px;
+  color: #0d47a1;
+}
+
+.sobre{
+  padding: 60px 40px;
+  background-color: #f5f7fa;
+  text-align: center;
+}
+
+.sobre h2{
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.container-sobre{
+  max-width: 1150px;
+  margin: auto;
+  display: flex;
+}
+
+.col-left{
+  width: 50%;
+  text-align: left;
+  
+}
+
+.col-left h3{
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+}
+
+.col-left p{
+  font-size: 1.3rem;
+  padding: 10px 0px;
+  line-height: 2rem;
+}
+
+.col-right{
+  width: 50%;
+  display: flex;
+  flex-flow: wrap;
+  text-align: left;
+}
+
+.box-card-sobre{
+  width: 50%;
+  padding: 10px;
+}
+
+.icon{
+  margin-right: 10px;
+}
+
+.box-card-sobre h4{
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  height: 24px;
+  display: flex;
+}
+
+.box-card-sobre p{
+  font-size: 0.9rem;
+  
+}
+
+.contato{
+  background-color: #222831;
+  padding: 60px 40px;
+  text-align: left;
+  color: white;
+}
+
+.box-contato{
+  max-width: 1150px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+h5{
+  font-weight: normal;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+
+}
+
+.midias-sociais img{
+  filter: invert();
+  margin-right: 5px;
+}
+
+.midias-sociais img:hover{
+  filter: contrast(20%);
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+}
+
+.info a{
+  color: white;
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+
+.info a:hover{
+  text-decoration: underline;
+}
+
+li{
+  list-style: none;
+  font-weight: normal;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+li img{
+  filter: invert();
+  margin-right: 10px;
+}
+
+footer{
+  background-color: #0d47a1;
+      color: white;
+      padding: 30px 40px;
+      text-align: center;
+}
+
+@media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        padding: 10px 40px;
+      }
+      .header{
+        align-items: center;
+        flex-direction: column;
+      }
+      nav {
+        margin-top: 10px;
+      }
+      .btn-header{
+        display: none;
+      }
+      .home h1 {
+        font-size: 2rem;
+      }
+      .home p {
+        font-size: 1rem;
+      }
+      .home-buttons{
+        display: flex;
+        justify-content: space-between;
+      }
+      .home-buttons .btn{
+        width: 180px;
+        margin: 0;
+      }
+      .sobre{
+        padding: 40px;
+      }
+      .container-sobre{
+        flex-direction: column;
+      }
+      .col-left{
+        width: 100%;
+      }
+      .col-left h3{
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+      }
+      .col-left p{
+        font-size: 1.2rem;
+        padding: 10px 0px;
+        line-height: 1.4rem;
+      }
+      .col-right{
+        width: 100%;
+      }
+      .solucoes{
+        padding: 40px;
+      }
+      .img-card{
+        height: 150px;
+        overflow: hidden;
+      }
+      .box-contato{
+        flex-direction: column;
+        gap: 30px;
+      }
+    }
