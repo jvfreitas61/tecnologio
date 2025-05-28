@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </head>
 
 <body>
@@ -16,14 +17,18 @@
       <div class="logo">
         <img src="img/tecnologio.png" alt="Logo" class="logo-img">
       </div>
-      <div class="menu">
+      <div class="caixa-menu">
+      <div class="menu" id="itens">
+        <div class="botao-fechar"><i id="fechar" class="material-icons" onclick="clickMenu()">close</i></div>
         <nav>
-          <a href="#home">Início</a>
-          <a href="#sobre">Sobre</a>
-          <a href="#solucoes">Soluções</a>
-          <a href="#contato">Contato</a>
+          <a href="#home" onclick="fecharMenu()">Início</a>
+          <a href="#sobre" onclick="fecharMenu()">Sobre</a>
+          <a href="#solucoes" onclick="fecharMenu()">Soluções</a>
+          <a href="#contato" onclick="fecharMenu()">Contato</a>
         </nav>
         <button class="btn btn-header">Solicite uma Demonstração</button>
+      </div>
+      <div><i id="burger" class="material-icons" onclick="clickMenu()">menu</i></div>
       </div>
     </div>
   </header>
@@ -125,6 +130,7 @@
   <footer>
     <p>© 2025 TecnoLogio. Todos os direitos reservados.</p>
   </footer>
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
