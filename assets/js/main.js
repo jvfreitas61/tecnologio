@@ -12,6 +12,6 @@ function fecharMenu(){
   }
 }
 
-window.onresize = function() {
+/*window.onresize = function() {
         location.reload();
-};
+};*/
