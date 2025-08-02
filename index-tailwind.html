@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TecnoLogio</title>
+  <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body class="font-[Inter] scroll-smooth bg-[#f5f7fa] text-[#222831]">
+  <header class="bg-white py-5 px-10 items-center shadow-[0_2px_4px_rgba(0,0,0,0.05)] max-[825px]:flex-col max-[825px]:py-2.5">
+    <div class="m-auto max-w-[1150px] flex justify-between max-[825px]:items-center">
+      <div class="flex text-center py-2.5 px-0">
+        <img src="img/tecnologio.png" alt="Logo" class="max-w-[150px]">
+      </div>
+      <div class="content-center">
+      <div class="flex items-center max-[825px]:bg-white max-[825px]:w-screen max-[825px]:h-screen max-[825px]:fixed max-[825px]:top-0 max-[825px]:left-0 max-[825px]:z-1000 max-[825px]:flex-col max-[825px]:justify-right max-[825px]:hidden" id="itens">
+        <div class="hidden max-[825px]:py-5 max-[825px]:px-10 max-[825px]:flex max-[825px]:justify-end max-[825px]:w-full"><i id="fechar" class="material-icons bg-white text-[#0d47a1] text-center align-middle p-0 cursor-pointer text-2xl hidden" onclick="clickMenu()">close</i></div>
+        <nav class="mr-[15px] max-[825px]:w-full max-[825px]:h-full max-[825px]:flex max-[825px]:flex-col max-[825px]:m-0">
+          <a class="my-0 mx-[15px] no-underline text-[#222831] font-medium max-[825px]:font-medium max-[825px]:text-[1.5rem] max-[825px]:text-[#0d47a1] max-[825px]:text-right max-[825px]:m-0 max-[825px]:py-2.5 max-[825px]:px-10" href="#home" onclick="fecharMenu()">Início</a>
+          <a class="my-0 mx-[15px] no-underline text-[#222831] font-medium max-[825px]:font-medium max-[825px]:text-[1.5rem] max-[825px]:text-[#0d47a1] max-[825px]:text-right max-[825px]:m-0 max-[825px]:py-2.5 max-[825px]:px-10" href="#sobre" onclick="fecharMenu()">Sobre</a>
+          <a class="my-0 mx-[15px] no-underline text-[#222831] font-medium max-[825px]:font-medium max-[825px]:text-[1.5rem] max-[825px]:text-[#0d47a1] max-[825px]:text-right max-[825px]:m-0 max-[825px]:py-2.5 max-[825px]:px-10" href="#solucoes" onclick="fecharMenu()">Soluções</a>
+          <a class="my-0 mx-[15px] no-underline text-[#222831] font-medium max-[825px]:font-medium max-[825px]:text-[1.5rem] max-[825px]:text-[#0d47a1] max-[825px]:text-right max-[825px]:m-0 max-[825px]:py-2.5 max-[825px]:px-10" href="#contato" onclick="fecharMenu()">Contato</a>
+        </nav>
+        <button class="btn-header py-2.5 px-5 bg-[#1e88e5] text-white border-none rounded-[5px] cursor-pointer font-semibold transform-[all_0.1s_linear] hover:transform-[scale(1.03)] max-[825px]:w-[80%] max-[825px]:m-[5rem]">Solicite uma Demonstração</button>
+      </div>
+      <div class="hidden max-[825px]:block"><i id="burger" class="material-icons bg-white text-[#0d47a1] text-center align-middle p-0 cursor-pointer text-2xl" onclick="clickMenu()">menu</i></div>
+      </div>
+    </div>
+  </header>
+  <section id="home" class="bg-[url(img/capa.jpg)] bg-cover bg-center py-20 px-10">
+    <div class="max-w-[1150px] m-auto">
+      <div class="max-w-[600px]">
+        <h1 class="text-[2.5rem] mb-[20px] text-white max-[825px]:text-[2rem]">Tecnologia que conecta o futuro ao presente</h1>
+        <p class="text-[1.3rem] mb-[30px] text-[#d2d2d2] max-[825px]:text-[1rem]">Soluções digitais modernas para empresas que querem evoluir.</p>
+        <div class="mr-[20px] max-[825px]:flex max-[825px]:justify-between max-[825px]:gap-[20px]">
+          <button class="mr-[20px] py-2.5 px-5 bg-[#1e88e5] text-white border-none rounded-[5px] cursor-pointer font-semibold transform-[all_0.1s_linear] hover:transform-[scale(1.03)] max-[825px]:m-0 max-[825px]:p-2.5">Fale com um especialista</button>
+          <button class="mr-[20px] py-2.5 px-5 bg-[#0d47a1] text-white border-none rounded-[5px] cursor-pointer font-semibold transform-[all_0.1s_linear] hover:transform-[scale(1.03)] max-[825px]:m-0 max-[825px]:p-2.5">Conheça nossas soluções</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="sobre" class="py-15 px-10 bg-[#f5f7fa] text-center max-[825px]:p-10">
+    <h2 class="text-[2rem] mb-[30px]">Sobre nós</h2>
+    <div class="max-w-[1150px] m-auto flex max-[825px]:flex-col">
+      <div class="w-[50%] text-left max-[825px]:w-full">
+        <h3 class="mb-[15px] text-[1.6rem] max-[825px]:text-[1.5rem]">Por que a TecnoLogio ?</h3>
+        <p class="text-[1.3rem] py-2.5 px-0 leading-[2rem] max-[825px]:text-[1.2rem] max-[825px]:leading-[1.5rem]">Estamos comprometidos em oferecer soluções tecnológicas que impulsionam o sucesso dos nossos clientes.</p>
+        <p class="text-[1.3rem] py-2.5 px-0 leading-[2rem] max-[825px]:text-[1.2rem] max-[825px]:leading-[1.5rem]">
+          Prepare sua empresa para os desafios de amanhã.
+        </p>
+      </div>
+      <div class="w-[50%] flex flex-wrap text-left max-[825px]:w-full">
+        <div class="w-[50%] p-2.5">
+          <h4 class="text-[1.3rem] mb-[5px] h-[24px] flex max-[825px]:text-[1rem]"><img src="icons/raio.png" alt="Velocidade" class="mr-[10px]">Velocidade</h4>
+          <p class="text-[0.9rem]">Soluções com agilidade e precisão, acelerando sua transformação digital sem comprometer a qualidade.
+          </p>
+        </div>
+        <div class="w-[50%] p-2.5">
+          <h4 class="text-[1.3rem] mb-[5px] h-[24px] flex max-[825px]:text-[1rem]"><img src="icons/inovacao.png" alt="Inovação" class="mr-[10px]">Inovação</h4>
+          <p class="text-[0.9rem]">Tecnologias modernas e uma abordagem criativa para impulsionar a evolução do seu negócio.
+          </p>
+        </div>
+        <div class="w-[50%] p-2.5">
+          <h4 class="text-[1.3rem] mb-[5px] h-[24px] flex max-[825px]:text-[1rem]"><img src="icons/atendimento-ao-cliente.png" alt="Suporte" class="mr-[10px]">Suporte</h4>
+          <p class="text-[0.9rem]">Atendimento próximo, ágil e confiável em todas as fases do projeto, com foco nas suas necessidades.
+          </p>
+        </div>
+        <div class="w-[50%] p-2.5">
+          <h4 class="text-[1.3rem] mb-[5px] h-[24px] flex max-[825px]:text-[1rem]"><img src="icons/escudo.png" alt="Segurança" class="mr-[10px]">Segurança</h4>
+          <p class="text-[0.9rem]">Proteção sólida de dados com práticas robustas de segurança e conformidade.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="solucoes" class="py-15 px-10 bg-[#f5f7fa] text-center max-[825px]:p-10">
+    <h2 class="text-[2rem] mb-[30px]">Nossas Soluções</h2>
+    <div class="flex flex-wrap justify-center gap-[50px]">
+      <div class="shadow-[0_2px_8px_rgba(0,0,0,0.05)] w-[350px] overflow-hidden"><div class="max-h-[230px] max-[825px]:h-[150px] max-[825px]:overflow-hidden"><img src="img/Transformação Digital.webp" class="max-h-[230px]" alt="Transformação Digital"></div>
+        <h3 class="p-2.5 text-[#0d47a1]">Transformação Digital</h3>
+      </div>
+      <div class="shadow-[0_2px_8px_rgba(0,0,0,0.05)] w-[350px] overflow-hidden"><div class="max-h-[230px] max-[825px]:h-[150px] max-[825px]:overflow-hidden"><img src="img/Sistemas Personalizados.jpeg" class="max-h-[230px]" alt="Sistemas Personalizados"></div>
+        <h3 class="p-2.5 text-[#0d47a1]">Sistemas Personalizados</h3>
+      </div>
+      <div class="shadow-[0_2px_8px_rgba(0,0,0,0.05)] w-[350px] overflow-hidden"><div class="max-h-[230px] max-[825px]:h-[150px] max-[825px]:overflow-hidden"><img src="img/Infraestrutura em Nuvem.webp" class="max-h-[230px]" alt="Infraestrutura em Nuvem"></div>
+        <h3 class="p-2.5 text-[#0d47a1]">Infraestrutura em Nuvem</h3>
+      </div>
+    </div>
+  </section>
+  <section id="contato" class="bg-[#222831] py-15 px-10 text-left text-white">
+    <div class="max-w-[1150px] m-auto flex justify-between max-[825px]:flex-col max-[825px]:gap-[30px]">
+      <div>
+        <img src="img/tecnologio.png" alt="Logo" class="max-w-[150px]">
+      </div>
+      <div class="flex flex-col">
+        <h5 class="font-medium text-[1.1rem] mb-[15px]">INFORMAÇÕES</h5>
+        <a href="#" class="text-white mb-2.5 font-medium hover:underline">Onde Estamos</a>
+        <a href="#" class="text-white mb-2.5 font-medium hover:underline">Trabalhe Conosco</a>
+        <a href="#" class="text-white mb-2.5 font-medium hover:underline">Portal do Cliente</a>
+        <a href="#" class="text-white mb-2.5 font-medium hover:underline">Termos de Uso</a>
+        <a href="#" class="text-white mb-2.5 font-medium hover:underline">Política de Privacidade</a>
+        <a href="#" class="text-white mb-2.5 font-medium hover:underline">Política de Segurança</a>
+      </div>
+      <div class="info-contato">
+        <h5 class="font-medium text-[1.1rem] mb-[15px]">CONTATO</h5>
+        <ul>
+          <li class="list-none font-medium mb-[15px] flex items-center"><img src="icons/mapas-e-bandeiras.png" class="invert mr-2.5" alt="Endereço">Rua 315 W3 Norte - Ed. Asa Norte - Brasília-DF, 72000-000</li>
+          <li class="list-none font-medium mb-[15px] flex items-center"><img src="icons/telefone.png" class="invert mr-2.5" alt="Telefone">(61) 3532-4772</li>
+          <li class="list-none font-medium mb-[15px] flex items-center"><img src="icons/o-email.png" class="invert mr-2.5" alt="E-mail">contato@tecnologio.com.br</li>
+          <li class="list-none font-medium mb-[15px] flex items-center">SAC: 0800 777 1234</li>
+          <li class="list-none font-medium mb-[15px] flex items-center">Atendimento de segunda a sexta-feira, das 8h às 17h</li>
+        </ul>
+      </div>
+      <div class="midias-sociais">
+        <h5 class="font-medium text-[1.1rem] mb-[15px]">MÍDIAS SOCIAIS</h5>
+        <div class="flex">
+          <a href="#"><img src="icons/redes-sociais/facebook.png" class="invert mr-[5px] hover:contrast-20 max-[825px]:mr-[20px]" alt="facebook"></a>
+          <a href="#"><img src="icons/redes-sociais/instagram.png" class="invert mr-[5px] hover:contrast-20 max-[825px]:mr-[20px]" alt="instagram"></a>
+          <a href="#"><img src="icons/redes-sociais/twitter.png" class="invert mr-[5px] hover:contrast-20 max-[825px]:mr-[20px]" alt="twitter"></a>
+          <a href="#"><img src="icons/redes-sociais/youtube.png" class="invert mr-[5px] hover:contrast-20 max-[825px]:mr-[20px]" alt="youtube"></a>
+          <a href="#"><img src="icons/redes-sociais/linkedin.png" class="invert mr-[5px] hover:contrast-20 max-[825px]:mr-[20px]" alt="linkedin"></a>
+          <a href="#"><img src="icons/redes-sociais/whatsapp.png" class="invert mr-[5px] hover:contrast-20 max-[825px]:mr-[20px]" alt="whatsapp"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-[#0d47a1] text-white py-7.5 px-10 text-center">
+    <p>© 2025 TecnoLogio. Todos os direitos reservados.</p>
+  </footer>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
