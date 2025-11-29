@@ -1,3 +1,11 @@
+const enviarMensagem = document.getElementById("btSubmit")
+
+enviarMensagem.addEventListener("click", (e) => {
+  e.preventDefault();
+  alert("Mensagem enviada!")
+  
+})
+
 function clickMenu() {
     if (itens.style.display == 'flex') {
         itens.style.display = 'none'
@@ -15,3 +23,4 @@ function fecharMenu(){
 /*window.onresize = function() {
         location.reload();
 };*/
+
